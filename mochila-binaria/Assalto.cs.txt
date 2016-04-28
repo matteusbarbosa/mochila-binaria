@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace mochila_binaria
+{
+    public partial class Assalto : Form
+    {
+        public Assalto()
+        {
+            InitializeComponent();
+        }
+
+        public Assalto(Dinamico dn)
+        {
+            InitializeComponent();
+        }
+
+        public Assalto(Guloso gs)
+        {
+            InitializeComponent();
+        }
+
+        private void Assalto_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

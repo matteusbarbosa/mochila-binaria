@@ -1,0 +1,134 @@
+﻿namespace mochila_binaria
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.bt_pg_dinamica = new System.Windows.Forms.Button();
+            this.bt_alg_guloso = new System.Windows.Forms.Button();
+            this.qtd_capacidade_mochila = new System.Windows.Forms.TextBox();
+            this.qtd_itens_loja = new System.Windows.Forms.TextBox();
+            this.lb_1 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // bt_pg_dinamica
+            // 
+            this.bt_pg_dinamica.Location = new System.Drawing.Point(67, 155);
+            this.bt_pg_dinamica.Name = "bt_pg_dinamica";
+            this.bt_pg_dinamica.Size = new System.Drawing.Size(172, 23);
+            this.bt_pg_dinamica.TabIndex = 0;
+            this.bt_pg_dinamica.Text = "Solução dinâmica";
+            this.bt_pg_dinamica.UseVisualStyleBackColor = true;
+            this.bt_pg_dinamica.Click += new System.EventHandler(this.bt_pg_dinamica_Click);
+            // 
+            // bt_alg_guloso
+            // 
+            this.bt_alg_guloso.Location = new System.Drawing.Point(67, 184);
+            this.bt_alg_guloso.Name = "bt_alg_guloso";
+            this.bt_alg_guloso.Size = new System.Drawing.Size(172, 23);
+            this.bt_alg_guloso.TabIndex = 1;
+            this.bt_alg_guloso.Text = "Método Guloso";
+            this.bt_alg_guloso.UseVisualStyleBackColor = true;
+            // 
+            // qtd_capacidade_mochila
+            // 
+            this.qtd_capacidade_mochila.AccessibleName = "Valor inicial";
+            this.qtd_capacidade_mochila.BackColor = System.Drawing.SystemColors.Control;
+            this.qtd_capacidade_mochila.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.qtd_capacidade_mochila.Cursor = System.Windows.Forms.Cursors.Help;
+            this.qtd_capacidade_mochila.Location = new System.Drawing.Point(67, 103);
+            this.qtd_capacidade_mochila.MaxLength = 2;
+            this.qtd_capacidade_mochila.Name = "qtd_capacidade_mochila";
+            this.qtd_capacidade_mochila.Size = new System.Drawing.Size(172, 20);
+            this.qtd_capacidade_mochila.TabIndex = 2;
+            this.qtd_capacidade_mochila.TextChanged += new System.EventHandler(this.bt_alg_guloso_Click);
+            // 
+            // qtd_itens_loja
+            // 
+            this.qtd_itens_loja.AccessibleName = "Valor inicial";
+            this.qtd_itens_loja.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.qtd_itens_loja.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.qtd_itens_loja.Cursor = System.Windows.Forms.Cursors.No;
+            this.qtd_itens_loja.ForeColor = System.Drawing.SystemColors.Info;
+            this.qtd_itens_loja.Location = new System.Drawing.Point(67, 47);
+            this.qtd_itens_loja.MaxLength = 2;
+            this.qtd_itens_loja.Name = "qtd_itens_loja";
+            this.qtd_itens_loja.ReadOnly = true;
+            this.qtd_itens_loja.Size = new System.Drawing.Size(172, 20);
+            this.qtd_itens_loja.TabIndex = 3;
+            this.qtd_itens_loja.Text = "120";
+            this.qtd_itens_loja.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lb_1
+            // 
+            this.lb_1.AutoSize = true;
+            this.lb_1.Location = new System.Drawing.Point(67, 28);
+            this.lb_1.Name = "lb_1";
+            this.lb_1.Size = new System.Drawing.Size(136, 13);
+            this.lb_1.TabIndex = 4;
+            this.lb_1.Text = "Quantidade de itens da loja";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(67, 87);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(154, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Capacidade da mochila (10-20)";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(308, 261);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lb_1);
+            this.Controls.Add(this.qtd_itens_loja);
+            this.Controls.Add(this.qtd_capacidade_mochila);
+            this.Controls.Add(this.bt_alg_guloso);
+            this.Controls.Add(this.bt_pg_dinamica);
+            this.Name = "Form1";
+            this.Text = "Mochila Binária (Ladrão)";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button bt_pg_dinamica;
+        private System.Windows.Forms.Button bt_alg_guloso;
+        private System.Windows.Forms.TextBox qtd_capacidade_mochila;
+        private System.Windows.Forms.TextBox qtd_itens_loja;
+        private System.Windows.Forms.Label lb_1;
+        private System.Windows.Forms.Label label1;
+    }
+}
+

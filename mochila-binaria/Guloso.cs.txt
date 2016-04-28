@@ -1,0 +1,157 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace mochila_binaria
+{
+    public class Guloso
+    {
+        private double valor_total;
+        private double tempo_execucao;
+        private Double[,] itens;
+        private int qtd_capacidade_mochila;
+        private int qtd_produtos_loja;
+
+        public void solucionar(int num_itens)
+        {
+            Itens = Extras.gerarPesoValor(num_itens);
+
+            //função para a mochila 0-1 - Programação Dinâmica
+            int a[PESO_MAX]; //vetor "a" possui o valor máximo que pode ser obtida utilizando no máximo de peso
+            int item_inserido[PESO_MAX]; //controle de objetos adicionados
+            int aux = 0;
+            int valor_total = 0;
+            clock_t iniciar = 0, terminar = 0;
+
+            gotoxy(5, 8);
+            printf("Qual a capacidade da mochila? ");
+            cin >> capacidade_mochila;
+            if (capacidade_mochila >= 10 && capacidade_mochila <= 20)
+            {
+                for (int i = 0; i <= capacidade_mochila; ++i)
+                {
+                    a[i] = 0;
+                    item_inserido[i] = -1;
+                }
+                a[0] = 0;
+                gotoxy(5, 10);
+                printf("Quantos itens possui a loja? ");
+                cin >> itens;
+                iniciar = clock();
+                geraAuto();
+                for (int i = 1; i <= capacidade_mochila; ++i)
+                {
+                    for (int j = 0; j < itens; ++j)
+                    {
+                        if ((peso[j] <= i) && (a[i] < a[i - peso[j]] + valor[j]))
+                        {
+                            a[i] = a[i - peso[j]] + valor[j];
+                            item_inserido[i] = j;
+                        }
+                    }
+                }
+                aux = capacidade_mochila;
+                while ((aux > 0) && (item_inserido[aux] != -1))
+                {
+                    //printf("\n\tObjeto %d adicionado, custa R$%d e pesa %d Kg. Epaco livre: %d Kg.", item_inserido[aux] + 1, valor[item_inserido[aux]], peso[item_inserido[aux]], aux - peso[item_inserido[aux]]);
+                    aux -= peso[item_inserido[aux]];
+                }
+                terminar = clock();
+                printf("\n\n\tValor total carregado na mochila: R$%d\n", a[capacidade_mochila]);
+                printf("\n\tO tempo de execucao do programa e: %f", (terminar - iniciar) / CLK_TCK);
+                //gotoxy(32,23);
+                //printf ("Pressione qualquer tecla para voltar ao Menu...");
+            }
+            else
+            {
+                moldarTela(22, 12, 64, 18);
+                gotoxy(24, 14);
+                printf("A capacidade da Mochila e incompativel!");
+                gotoxy(25, 16);
+                printf("A capacidade deve ser entre 10 a 20");
+                gotoxy(35, 23);
+                printf("Pressione qualquer tecla para continuar...");
+                getch();
+                clrscr();
+                algoritmoGuloso();
+            }
+        }
+
+        public Guloso()
+        {
+
+        }
+
+        public Guloso(int qtd_capacidade_mochila, int qtd_produtos_loja)
+        {
+
+        }
+
+        public double Valor_total
+        {
+            get
+            {
+                return valor_total;
+            }
+
+            set
+            {
+                valor_total = value;
+            }
+        }
+
+        public double Tempo_execucao
+        {
+            get
+            {
+                return tempo_execucao;
+            }
+
+            set
+            {
+                tempo_execucao = value;
+            }
+        }
+
+        public int Qtd_capacidade_mochila
+        {
+            get
+            {
+                return qtd_capacidade_mochila;
+            }
+
+            set
+            {
+                qtd_capacidade_mochila = value;
+            }
+        }
+
+        public int Qtd_produtos_loja
+        {
+            get
+            {
+                return qtd_produtos_loja;
+            }
+
+            set
+            {
+                qtd_produtos_loja = value;
+            }
+        }
+
+        public double[,] Itens
+        {
+            get
+            {
+                return itens;
+            }
+
+            set
+            {
+                itens = value;
+            }
+        }
+    }
+}
