@@ -1,0 +1,13 @@
+c:\users\cpd\documents\visual studio 2015\Projects\mochila-binaria\mochila-binaria\bin\Debug\mochila-binaria.exe.config
+c:\users\cpd\documents\visual studio 2015\Projects\mochila-binaria\mochila-binaria\bin\Debug\mochila-binaria.exe
+c:\users\cpd\documents\visual studio 2015\Projects\mochila-binaria\mochila-binaria\bin\Debug\mochila-binaria.pdb
+c:\users\cpd\documents\visual studio 2015\Projects\mochila-binaria\mochila-binaria\obj\Debug\mochila-binaria.csprojResolveAssemblyReference.cache
+c:\users\cpd\documents\visual studio 2015\Projects\mochila-binaria\mochila-binaria\obj\Debug\mochila_binaria.Form1.resources
+c:\users\cpd\documents\visual studio 2015\Projects\mochila-binaria\mochila-binaria\obj\Debug\mochila_binaria.Properties.Resources.resources
+c:\users\cpd\documents\visual studio 2015\Projects\mochila-binaria\mochila-binaria\obj\Debug\mochila-binaria.csproj.GenerateResource.Cache
+c:\users\cpd\documents\visual studio 2015\Projects\mochila-binaria\mochila-binaria\obj\Debug\mochila-binaria.exe
+c:\users\cpd\documents\visual studio 2015\Projects\mochila-binaria\mochila-binaria\obj\Debug\mochila-binaria.pdb
+C:\Users\cpd\documents\visual studio 2015\Projects\mochila-binaria\mochila-binaria\obj\Debug\mochila_binaria.Assalto.resources
+C:\Users\matteusbarbosa\Google Drive\PUC\ATUAL (1-2016)\POO-LAB\TRABALHO INTEGRADO\mochila-binaria (1)\mochila-binaria\bin\Debug\mochila-binaria.exe.config
+C:\Users\matteusbarbosa\Google Drive\PUC\ATUAL (1-2016)\POO-LAB\TRABALHO INTEGRADO\mochila-binaria (1)\mochila-binaria\obj\Debug\mochila-binaria.exe
+C:\Users\matteusbarbosa\Google Drive\PUC\ATUAL (1-2016)\POO-LAB\TRABALHO INTEGRADO\mochila-binaria (1)\mochila-binaria\obj\Debug\mochila-binaria.pdb

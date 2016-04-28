@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace mochila_binaria
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void bt_pg_dinamica_Click(object sender, EventArgs e)
+        {
+            if (qtd_capacidade_mochila.Text.Length == 0)
+            {
+                
+            }
+            else {
+                Dinamico dn = new Dinamico(Loja.QTD_ITENS, int.Parse(qtd_capacidade_mochila.Text));
+                Assalto ast = new Assalto(dn);
+                ast.Show();
+            }            
+        }
+
+        private void bt_alg_guloso_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            qtd_itens_loja.Text = "~"+Loja.QTD_ITENS;
+        }
+    }
+}
